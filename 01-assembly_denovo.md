@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Introduction to Next-generation Sequencing
+title: Introduction to RNA-seq and functional interpretation
 subtitle: De novo transcriptome assembly
 minutes: 5
 ---

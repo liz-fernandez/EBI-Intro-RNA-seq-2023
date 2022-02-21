@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="generator" content="pandoc">
-    <title>EBI Intro RNA-seq: Introduction to Next-generation Sequencing</title>
+    <title>EBI Intro RNA-seq: Introduction to RNA-seq and functional interpretation</title>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css" />
@@ -26,7 +26,7 @@
       <article>
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
-                    <a href="index.html"><h1 class="title">Introduction to Next-generation Sequencing</h1></a>
+                    <a href="index.html"><h1 class="title">Introduction to RNA-seq and functional interpretation</h1></a>
           <h2 class="subtitle">De novo transcriptome assembly</h2>
           <section class="objectives panel panel-warning">
 <div class="panel-heading">
@@ -49,7 +49,7 @@
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">Trinity</span> --seqType fq --SS_lib_type RF \
 --left Sp_log.left.fq.gz,Sp_hs.left.fq.gz \
 --right Sp_log.right.fq.gz,Sp_hs.right.fq.gz \
---CPU 2 --max_memory 1G --no_normalize_reads</code></pre></div>
+--CPU 2 --max_memory 1G</code></pre></div>
 <p>This command will take approximately 15 minutes to assemble a transcriptome.</p>
 <p>The options (flags) that we have used are the following:</p>
 <ul>
@@ -59,7 +59,6 @@
 <li>–right - Right side reads (o R2)</li>
 <li>–CPU 2 - Use 2 CPUs</li>
 <li>–max_memory 1G - Indicate that the maximum RAM to use is 1GB</li>
-<li>–no_normalize_reads - Do not carry out digital normalization of reads</li>
 </ul>
 <p>These are the most essential options to carry out the analysis. Therefore it is very important to know the orientation of the library which depends on the experimental protocol that was used to generate it.</p>
 <aside class="callout panel panel-info">
