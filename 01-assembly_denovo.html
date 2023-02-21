@@ -271,7 +271,7 @@ Maximum file size: 1000000000B
 Adding sequences from FASTA; added 408 sequences in 0.008569 seconds.</code></pre>
 <p>Doing blast search against generated database:</p>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">blastx</span> -query trinity_out_dir.Trinity.fasta \
-    -db mini_sprot.pep -out blastx.outfmt6 \
+    -db mini_sprot_pep.db -out blastx.outfmt6 \
     -evalue 1e-20 -num_threads 2 -max_target_seqs 1 -outfmt 6</code></pre></div>
 <p>Then we use a Trinity script to calculate the overall size:</p>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">analyze_blastPlus_topHit_coverage.pl</span> \

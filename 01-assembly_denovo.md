@@ -347,7 +347,7 @@ Doing blast search against generated database:
 
 ~~~ {.bash}
 $ blastx -query trinity_out_dir.Trinity.fasta \
-	-db mini_sprot.pep -out blastx.outfmt6 \
+	-db mini_sprot_pep.db -out blastx.outfmt6 \
 	-evalue 1e-20 -num_threads 2 -max_target_seqs 1 -outfmt 6
 ~~~
 
